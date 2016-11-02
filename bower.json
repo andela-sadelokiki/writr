@@ -1,0 +1,17 @@
+{
+  "name": "writr",
+  "description": "an app to write feeds and sort by date created",
+  "main": "index.js",
+  "authors": [
+    "Susan Adelokiki"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

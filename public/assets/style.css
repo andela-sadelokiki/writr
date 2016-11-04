@@ -1,0 +1,22 @@
+h4.panel-heading {
+    margin-top: 0px;
+}
+
+.list_item {
+    margin-top: 20px
+}
+
+.feedbox {
+    padding-top: 8em;
+}
+
+button.post {
+    position: relative;
+    left: 500px
+}
+
+.sort {
+    position: relative;
+    bottom: 8em;
+    left: 33em;
+}

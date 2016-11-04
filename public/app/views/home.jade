@@ -1,0 +1,33 @@
+.container
+  .row
+    .col-md-3
+    .col-md-6
+      .feedbox
+        .sort
+          .dropdown
+            button.btn.btn-default(type="button" ng-click="sortFeeds()") Sort
+        form.form-horizontal
+          .form-group
+            input.form-control(type="text" ng-model="feed.title" placeholder="Enter title")
+          .form-group
+            textarea.form-control(placeholder="Spill..." ng-model="feed.content")
+        .post-button
+          button.btn.btn-primary.post(type="button" ng-click="createFeed()") Post
+        .panel.panel-primary.list_item(ng-repeat="feed in sortedfeeds")
+          h4.panel-heading.title {{feed.title}}
+          .panel-body {{feed.content}}
+          .panel-footer Added on {{feed.created}}
+    .col-md-3
+//- div(ui-view)
+
+
+//- <button id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle>
+//-         Dropdown on Body <span class="caret"></span>
+//-       </button>
+//-       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+//-         <li role="menuitem"><a href="#">Action</a></li>
+//-         <li role="menuitem"><a href="#">Another action</a></li>
+//-         <li role="menuitem"><a href="#">Something else here</a></li>
+//-         <li class="divider"></li>
+//-         <li role="menuitem"><a href="#">Separated link</a></li>
+//-       </ul>

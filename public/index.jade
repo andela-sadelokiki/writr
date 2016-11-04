@@ -1,0 +1,23 @@
+doctype html
+html(lang="en" ng-app="Writr")
+  head
+    title Writr
+    base(href="/")
+    link(rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css")
+    link(rel="stylesheet" type="text/css" href="assets/style.css")
+
+  body
+    div(ui-view)
+
+      script(type="text/javascript" src="libs/angular/angular.min.js")
+      script(type="text/javascript" src="libs/angular-ui-router/release/angular-ui-router.min.js")
+      script(type="text/javascript" src="libs/angular-bootstrap/ui-bootstrap.min.js")
+
+      //- Main
+      script(type="text/javascript" src="app/app.js")
+
+      //- Controllers
+      script(type="text/javascript" src="app/controllers/feedclientctrl.js")
+      //- Services
+      script(type="text/javascript" src="app/services/baseurl.js")
+      script(type="text/javascript" src="app/services/feedservice.js")
